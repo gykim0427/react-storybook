@@ -7,7 +7,6 @@ React 프로젝트 Storybook 툴 자동 배포 테스트
 - TypeScript
 3. API / 라이브러리
 - React
-  - ddd
 - Storybook
 - Chromatic
   
