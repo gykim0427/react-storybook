@@ -1,5 +1,3 @@
-import React from 'react';
-
 import './newbutton.css';
 
 export interface NewButtonProps {
