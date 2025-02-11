@@ -16,7 +16,7 @@ React Storybook 툴 UI 검증
 4. 빌드도구
 	1) Vite
 ## 가이드
-1. Vite + React 프로젝트 생성
+1. Vite로 React+Typescript 프로젝트 생성
 	1) npm create vite@latest [project_name]
 	2) typescript 선택
 2. Storybook 설치
