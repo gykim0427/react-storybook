@@ -1,5 +1,5 @@
-# React Storybook 툴 UI 검증
-React Storybook 툴 UI 검증
+# React Storybook 디자인 협업
+Chromatic을 활용한 React Storybook 디자인 협업
 ## 목적
 1. Storybook에 로드되는 모든 컴포넌트, 스타일 변경 추적
 2. 수정 컴포넌트, 스타일 육안 확인
