@@ -40,23 +40,15 @@ Chromatic을 활용한 React Storybook 디자인 협업
 	5) storybook 선택
 	6) storybook 빌드
 		- npm run build-storybook
-	7) git 초기화 / 커밋
-		- git init
-		- git add .
-		- git commit -m "message comments"
-	8) 부여 받은 고유 project-token 명령어 실행
-		- npx chromatic --project-token=[project-token]
-	9) storybook uuid 링크 -> 팀과 공유하여 피드백
-		- "https://67a5aa~~~~~ckve.chromatic.com/" 와 같은 형식
-	10) github 무료 CI 서비스 설정
-		- github actions 추가
-	11) 프로젝트 root 폴더에 root/.github/workflows 디렉토리 생성
-	12) workflows폴더에 chromatic.yml 파일 생성
-		- projectToken secret관리를 위해 깃허브 repository > Settings > Secret and Valriables > Action > Repository sectrets > New repository secret 버튼 클릭
+	7) 프로젝트 root 폴더에 root/.github/workflows 디렉토리 생성
+	8) workflows폴더에 chromatic.yml 파일 생성 (CI/CD 파이프라인, 빌드 속도 향상)
+	9) git repository secret 등록
+		- projectToken secret관리를 위해 깃허브 repository > Settings > Secret and Valriables > Action > Repository secret > New repository secret 버튼 클릭
 			. Name : CHROMATIC_PROJECT_TOKEN
 			. Secret : 위에서 부여 받은 project-token 입력
 4. 버전 관리
-	1) Git (프로젝트 히스토리) 반영
+	1) Git 반영
 		. git pull & push
-	2) Chromatic (UI Design 히스토리) 반영
+	2) Chromatic 반영 (CI/CD 파이프라인 구축 시, 명령어 실행 불필요)
 		- npx chromatic --project-token=[project-token]
+
